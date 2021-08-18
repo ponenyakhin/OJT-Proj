@@ -1,0 +1,451 @@
+    /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+    
+    .content {
+        width: 1000px;
+        margin: auto;
+        font-family: 'Myraid';
+        background-color: #ffffff;
+        border: 3px solid #cccccc;
+        border-right: none;
+    }
+    
+    .clearFix:after {
+        content: "";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+    }
+    
+    .header {
+        background-color: #6d9eeb;
+        text-align: center;
+        font-size: 16px;
+        color: #ffffff;
+        padding: 5px 5px;
+        border-right: 3px solid #cccccc;
+    }
+    
+    .person-info {
+        background-color: #fce5cd;
+        border-right: 3px solid #cccccc;
+        position: relative;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    
+    .info {
+        margin-top: 1px;
+    }
+    
+    .left-aside {
+        float: left;
+        width: 400px;
+        font-size: 14px;
+        padding-right: 2px;
+        margin-right: -2px;
+        border-right: 1px solid #cccccc;
+    }
+    
+    .name {
+        background-color: #f3f3f3;
+        padding-left: 5px;
+    }
+    
+    .label {
+        margin-top: 1px;
+        background-color: #f3f3f3;
+        padding-left: 5px;
+    }
+    
+    .phone {
+        padding-bottom: 20px;
+        padding-left: 5px;
+    }
+    
+    .add {
+        padding-bottom: 32px;
+    }
+    
+    .right-aside {
+        width: 598px;
+        float: right;
+        padding-bottom: 1px;
+    }
+    
+    .bdr {
+        margin-top: -1px;
+        border-top: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        height: 22px;
+    }
+    
+    .txt-box {
+        padding-right: 413px;
+        margin-left: 1px;
+        border: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        height: 16px;
+        padding-top: 3px;
+        width: 177px;
+        /* border-right: none; */
+    }
+    
+    .txt {
+        width: 93px;
+        border: 1px solid #cccccc;
+    }
+    
+    .bdr1 {
+        margin-top: 1px;
+        border-left: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        height: 23px;
+    }
+    
+    .bdr02 {
+        margin-top: 1px;
+        border-left: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        border-top: 1px solid #cccccc;
+        height: 25px;
+        padding-bottom: 1px;
+        margin-left: 1px;
+    }
+    
+    .bdr03 {
+        margin-top: 1px;
+        border-left: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        height: 25px;
+        padding-bottom: 1px;
+        margin-left: 1px;
+        /* display: none; */
+    }
+    
+    .bdr04 {
+        margin-top: 1px;
+        border-left: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        height: 25px;
+        padding-bottom: 1px;
+        margin-left: 1px;
+    }
+    
+    .bdr2 {
+        margin-top: 1px;
+        border-left: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+        /* border-bottom: 1px solid #cccccc; */
+        padding-bottom: 1px;
+    }
+    
+    .txt-area {
+        width: 588px;
+        margin: 1px 0 0 1px;
+        border: 1px solid #cccccc;
+        border-right: none;
+        display: block;
+    }
+    
+    .edu-bdr {
+        border-top: 1px solid #cccccc;
+        width: 598px;
+        float: right;
+    }
+    
+    .edu {
+        margin-top: -13px;
+        background-color: #fce5cd;
+        border-right: 3px solid #cccccc;
+        position: relative;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    
+    .edu-info {
+        margin-top: -13px;
+    }
+    
+    .left-info {
+        width: 400px;
+        float: left;
+    }
+    
+    .left-info .edu-lvl {
+        background-color: #f3f3f3;
+        padding-left: 5px;
+        padding-bottom: 140px;
+    }
+    
+    .right-info {
+        width: 596px;
+        float: right;
+        padding-bottom: 1px;
+        border-right: 3px solid #cccccc;
+    }
+    
+    .bch {
+        font-size: 13px;
+        width: 596px;
+        position: absolute;
+        background-color: #cfe2f3;
+        border-right: 3px solid #cccccc;
+    }
+    
+    .bch span {
+        display: block;
+        padding-left: 5px;
+    }
+    
+    .right-info .uni-list {
+        float: left;
+        list-style: none;
+        padding-top: 10px;
+        display: flex;
+        padding-right: 218px;
+    }
+    
+    .right-info .detail-list {
+        padding-right: 100px;
+        margin-left: -35px;
+    }
+    
+    .bch-txt {
+        border: 1px solid #cccccc;
+        width: 349px;
+        height: 31px;
+        margin-top: 50px;
+        position: relative;
+        display: block;
+    }
+    
+    .right-info .bch-txt ul {
+        float: left;
+        list-style: none;
+        padding-top: 10px;
+        display: flex;
+        margin-left: -39px;
+        margin-top: -26px;
+    }
+    
+    .right-info .bch-txt li {
+        padding-right: 2px;
+    }
+    
+    .right-info .bch-txt ul li .uni-txt {
+        width: 108px;
+        padding-bottom: 0px;
+        padding-top: 5px;
+        border: 1px solid #cccccc;
+        margin-top: -1px;
+        position: relative;
+        display: inline;
+    }
+    
+    .right-info .uni-list1 {
+        float: left;
+        list-style: none;
+        margin-top: 10px;
+        display: flex;
+    }
+    
+    .right-info .detail-list1 {
+        padding-right: 100px;
+        margin-left: -35px;
+    }
+    
+    .txt-box1 {
+        padding-right: 413px;
+        border: 1px solid #cccccc;
+        border-right: none;
+        margin-top: 0px;
+        position: absolute;
+        margin-left: -348px;
+        border-top: none;
+        width: 177px;
+    }
+    
+    .bdr3 {
+        margin-top: -1px;
+        border-top: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        height: 27px;
+    }
+    
+    .bdr4 {
+        border-left: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        height: 27px;
+    }
+    
+    .txt-box2 {
+        padding-right: 414px;
+        margin-left: 1px;
+        border: 1px solid #cccccc;
+        border-right: none;
+        height: 20px;
+        padding-top: 3px;
+        width: 177px;
+    }
+    
+    .right-info .uni-list2 {
+        float: left;
+        list-style: none;
+        padding-top: 10px;
+        display: flex;
+        padding-right: 324px;
+        margin-top: -11px;
+    }
+    
+    .right-info .detail-list2 {
+        padding-right: 100px;
+        margin-left: -35px;
+    }
+    
+    .pro-skill {
+        border: 1px solid #cccccc;
+        width: 232px;
+        height: 31px;
+        padding-bottom: 32px;
+        margin-top: 24px;
+        position: relative;
+        /* padding-right: 354px;
+    border-right: 3px solid #cccccc; */
+    }
+    
+    .pro-skill ul {
+        float: left;
+        list-style: none;
+        padding-top: 10px;
+        display: flex;
+        margin-left: -39px;
+        margin-top: -25px;
+    }
+    
+    .pro-skill li {
+        padding-right: 2px;
+    }
+    
+    .skill {
+        padding-bottom: 62px;
+    }
+    
+    .skill1 {
+        padding-bottom: 130px;
+    }
+    
+    .pro-skill ul li .uni-txt {
+        width: 93px;
+        padding-bottom: 0px;
+        padding-top: 5px;
+        border: 1px solid #cccccc;
+        position: relative;
+        color: #cccccc;
+    }
+    
+    .right-info .bdr-lan {
+        border: 1px solid #cccccc;
+        width: 232px;
+        margin-top: 22px;
+    }
+    
+    .lan-txt {
+        border: 1px solid #cccccc;
+        width: 222px;
+        margin-left: 2px;
+        margin-top: 1px;
+        color: #cccccc;
+    }
+    
+    .exp {
+        margin-top: -11px;
+    }
+    
+    .bdr01 {
+        margin-top: -1px;
+        height: 22px;
+        border: 1px solid #cccccc;
+        border-right: 3px solid #cccccc;
+    }
+    
+    .itn-info {
+        padding-bottom: 28px;
+    }
+    
+    .btn {
+        margin: 0 auto;
+        margin-left: 320px;
+        margin-top: 10px;
+        /* border-right: 3px solid #cccccc; */
+    }
+    
+    .btn-res {
+        background-color: #6d9eeb;
+        padding: 0 25px 0 25px;
+        margin-right: 10px;
+    }
+    
+    .btn-sub {
+        background-color: #6d9eeb;
+        padding: 0 25px 0 25px;
+    }
+    
+    .upt-btn {
+        background-color: #6d9eeb;
+        padding: 0 25px 0 25px;
+    }
+    
+    .min-btn {
+        padding: 0 10px 0 10px;
+        background-color: #6d9eeb;
+        margin-left: -5px;
+        margin-top: -30px;
+    }
+    
+    #GFG_DIV .bdr03 {
+        display: none;
+    }
+    
+    .pls-btn {
+        padding: 0 8px 0 8px;
+        background-color: #6d9eeb;
+        margin-left: -5px;
+        margin-top: -1px;
+    }
+    
+    .min-btn1 {
+        padding: 0 10px 3px 10px;
+        background-color: #6d9eeb;
+    }
+    
+    .pls-btn1 {
+        padding: 0 8px 3px 8px;
+        background-color: #6d9eeb;
+        margin-top: -1px;
+    }
+    
+    footer {
+        border-right: 3px solid #cccccc;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
