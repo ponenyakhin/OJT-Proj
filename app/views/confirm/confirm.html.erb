@@ -1,0 +1,17 @@
+<title> Confirm Form</title>
+<div class="content1">
+<div class="header ">
+   Confirm Form Data
+</div>
+<div class="btn confirm">
+<%= form_with url: "/posts", method: :get do |form|  %>
+
+<%= form.submit "Back" , class:'btn-res' %>       
+<%= form.submit "Submit" , class:'btn-sub' %>  
+<% end %>
+
+</div>
+</div>
+<div class="btn">
+
+

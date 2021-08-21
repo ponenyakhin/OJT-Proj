@@ -23,6 +23,14 @@
         border-right: none;
     }
     
+    .content1 {
+        width: 1000px;
+        margin: auto;
+        font-family: 'Myraid';
+        background-color: #ffffff;
+        border: 3px solid #cccccc;
+    }
+    
     .clearFix:after {
         content: "";
         display: block;
@@ -39,6 +47,11 @@
         color: #ffffff;
         padding: 5px 5px;
         border-right: 3px solid #cccccc;
+    }
+    
+    .confirm {
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
     
     .person-info {
@@ -394,7 +407,7 @@
     
     .btn {
         margin: 0 auto;
-        margin-left: 320px;
+        margin-left: 400px;
         margin-top: 10px;
         /* border-right: 3px solid #cccccc; */
     }
@@ -402,7 +415,7 @@
     .btn-res {
         background-color: #6d9eeb;
         padding: 0 25px 0 25px;
-        margin-right: 10px;
+        margin-right: 40px;
     }
     
     .btn-sub {
@@ -431,6 +444,17 @@
         background-color: #6d9eeb;
         margin-left: -5px;
         margin-top: -1px;
+    }
+    
+    .link {
+        margin-top: 30px;
+        margin-left: 400px;
+        margin-bottom: 30px;
+        background-color: #6d9eeb;
+        padding: 5px;
+        width: 200px;
+        text-align: center;
+        border: 2px solid #cccccc;
     }
     
     .min-btn1 {

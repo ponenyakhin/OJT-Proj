@@ -26,57 +26,42 @@
                 <div class="label add">HomeTown Address</div>
             </div>
             <div class="right-aside">
-                <div class="bdr">
-                    <form action="/hello/there">
-                        <input type="text" name="name" class="txt-box">
-                    </form>
+            <%= form_with(url: '/confirm', scope: :session, local: true) do |form| %>
+
+                <div class="bdr">              
+                        <%= form.text_field :name , class: 'txt-box' %>                  
                 </div>
-                <div class="bdr02">                  
-                    <button type="button" class="upt-btn">Upload Profile</button>
+                <div class="bdr02">                                   
+                    <%= form.submit "Upload Photo" , class:'upt-btn' %>
                 </div>
                 <div class="bdr1">
-                    <form action="/hello/there">
-                        <input type="text" name="dob" class="txt-box">
-                    </form>
-                </div>
-               
-                <div id="GFG_DIV">
-                    
+                    <%= form.text_field :dob , class: 'txt-box' %>                  
+                </div>             
+                <div id="GFG_DIV">                   
                 <div class="bdr03">  
                 </div>
                  </div>
                  <div class="bdr03"> 
-                 <input type="text" name="txt" class="txt">
-                 <button type="button" class="min-btn" onClick="Delete()">-</button>
+                    <%= form.text_field :phone , class: 'txt' %>                  
+                    <%= form.submit "-" , class:'min-btn' %>
                  </div>
                  <div id="GFG_DIV">
                  <div class="bdr04">   
-                 <input type="text" name="txt" class="txt">
-
-                 <button type="button" class="pls-btn">+</button>
+                   <%= form.text_field :phone , class: 'txt' %>                  
+                   <%= form.submit "+" , class:'pls-btn' %>
                  </div>
-              </div>
+                 </div>
                 <div class="bdr1">
-                    <form action="/hello/there">
-                        <input type="text" name="email" class="txt-box">
-                    </form>
+                   <%= form.text_field :email, class: 'txt-box' %>                  
                 </div>
                 <div class="bdr2">
-                    <form action="/hello/there">
-                        <textarea id="w3review" name="w3review" rows="2" class="txt-area">
-                  </textarea>
-                    </form>
+                   <%= form.text_area :current_add, class: 'txt-area' %>                  
                 </div>
                 <div class="bdr2">
-                    <form action="/hello/there">
-                        <textarea id="w3review" name="w3review" rows="2" class="txt-area">
-                  </textarea>
-                    </form>
+                <%= form.text_area :home_add, class: 'txt-area' %>                  
                 </div>
             </div>
         </div>
-
-
         <div class="edu-bdr"></div>
         <div class="edu">
             <p>Education Background</p>
@@ -99,19 +84,14 @@
                 <div class="bch-txt clearFix">
                     <ul>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
+                        <%= form.text_field :uni, class: 'uni-txt' %>                  
+
                         </li>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
+                        <%= form.text_field :year, class: 'uni-txt' %>                  
                         </li>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
+                        <%= form.text_field :degree, class: 'uni-txt' %>                  
                         </li>
                     </ul>
 
@@ -123,33 +103,25 @@
                     <li class="detail-list">Degree</li>
                 </ul>
                 <div class="bch-txt clearFix">
-                    <ul>
-                        <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
-                        </li>
-                        <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
-                        </li>
-                        <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
-                        </li>
-                    </ul>
+                <ul>
+                <li>
+                <%= form.text_field :uni, class: 'uni-txt' %>                  
+
+                </li>
+                <li>
+                <%= form.text_field :year, class: 'uni-txt' %>                  
+                </li>
+                <li>
+                <%= form.text_field :degree, class: 'uni-txt' %>                  
+                </li>
+            </ul>
+
                 </div>
                 <div class="bdr3">
-                    <form action="/hello/there">
-                        <input type="text" name="dev-name" class="txt-box1">
-                    </form>
+                <%= form.text_field :Deploma, class: 'txt-box1' %>                  
                 </div>
                 <div class="bdr4">
-                    <form action="/hello/there">
-                        <input type="text" name="other-certificate" class="txt-box2">
-                    </form>
+                <%= form.text_field :Other_Certificate, class: 'txt-box2' %>                  
                 </div>
                 <ul class="uni-list2">
                     <li class="detail-list2"> Language</li>
@@ -158,53 +130,40 @@
                 <div class="pro-skill clearFix">
                     <ul>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" value="Java" class="uni-txt">
-                            </form>
+                        <%= form.text_field :Other_Certificate, class: 'uni-txt',value:'Java' %>                                   
                         </li>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" value="A" class="uni-txt">
-                            </form>
+                        <%= form.text_field :Other_Certificate, class: 'uni-txt',value:'A' %>                  
+                        
                         </li>
                         <li id="GFG_DIV">
-                        <button type="button" class="min-btn1" onClick='Delete()'>-</button>           
+                        <%= form.submit "-" , class:'min-btn1' %>       
                         </li>
-
                     </ul>
                     <ul>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
+                        <%= form.text_field :Programming_Skill, class: 'uni-txt' %>                                   
                         </li>
                         <li>
-                            <form action="/hello/there">
-                                <input type="text" name="name" class="uni-txt">
-                            </form>
+                        <%= form.text_field :Programming_Skill, class: 'uni-txt' %>                  
+                        
                         </li>
-                        <li>
-                        <button type="button" class="pls-btn1">+</button>           
+                        <li id="GFG_DIV">
+                        <%= form.submit "+" , class:'pls-btn1' %>       
                         </li>
-                    </ul>                   
+                    </ul>         
                 </div>
                 <div class="bch clearFix"><span> English</span></div>
                 <div class="bdr-lan clearFix">
-                    <form action="/hello/there">
-                        <input type="text" name="name" class="lan-txt" value="Level">
-                    </form>
+                    <%= form.text_field :Language_Skill, class: 'lan-txt',value:'Level' %>                  
                 </div>
                 <div class="bch clearFix"><span> Japan</span></div>
                 <div class="bdr-lan clearFix">
-                    <form action="/hello/there">
-                        <input type="text" name="name" class="lan-txt" value="Level">
-                    </form>
+                <%= form.text_field :Language_Skill, class: 'lan-txt',value:'Level' %>                  
                 </div>
                 <div class="bch clearFix"><span>Other</span></div>
                 <div class="bdr-lan clearFix">
-                    <form action="/hello/there">
-                        <input type="text" name="name" class="lan-txt" value="Level">
-                    </form>
+                <%= form.text_field :Language_Skill, class: 'lan-txt',value:'Level' %>                  
                 </div>
 
             </div>
@@ -222,43 +181,30 @@
                 <div class="label">Total Experience Years</div>
                 <div class="label itn-info">Comment
                 </div>
-
             </div>
             <div class="right-aside">
                 <div class="bdr01">
-                    <form action="/hello/there">
-                        <input type="checkbox" name="Job" value="Job">
-                    </form>
+                    <%= form.check_box :Job %>                  
+                </div>
+                <div class="bdr2">              
+                   <%= form.text_area :Intern_Info, class: 'txt-area' %>                  
                 </div>
                 <div class="bdr2">
-                <form action="/hello/there">
-                    <textarea id="w3review" name="w3review" rows="2" class="txt-area">
-              </textarea>
-                </form>
-            </div>
-            <div class="bdr2">
-            <form action="/hello/there">
-                <textarea id="w3review" name="w3review" rows="2" class="txt-area">
-          </textarea>
-            </form>
-        </div>
-        <div class="bdr1">
-                    <form action="/hello/there">
-                        <input type="text" name="ph" class="txt-box">
-                    </form>
-                </div>
+                   <%= form.text_area :Job_Exp, class: 'txt-area' %>                  
+               </div>
+              <div class="bdr1">
+              <%= form.text_field :Total_Exp, class: 'txt-box' %>                  
+              </div>
                 <div class="bdr2">
-                <form action="/hello/there">
-                    <textarea id="w3review" name="w3review" rows="2" class="txt-area">
-              </textarea>
-                </form>
+                <%= form.text_area :Comment, class: 'txt-area' %>                  
             </div>
             </div>
         </div>
         <footer>
         <div class="btn">
-        <button type="button" onclick="alert('Are You Sure To Cancle?')" class="btn-res">Reset</button>
-         <button type="button" onclick="alert('Good Luck!')" class="btn-sub">Submit</button>
+        <%= form.submit "Reset" , class:'btn-res' %>       
+         <%= form.submit "Submit" , class:'btn-sub' %>  
+        <% end %>
        </div>
        </footer>
     </div>
